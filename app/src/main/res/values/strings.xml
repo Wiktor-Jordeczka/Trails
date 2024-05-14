@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Trails</string>
+
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+
+    <string name="detail_activity_title">Szczegóły szlaku</string>
+
+    <string name="home_tab">Zdjęcia</string>
+    <string name="kat1_tab">Szlaki</string>
+    <string name="kat2_tab">Ulubione szlaki</string>
+
+    <string name="top_image">Jakiś obrazek</string>
+    <string name="creator_name">Wiktor Jordeczka</string>
+    <string name="creator_mail">wiktor.jordeczka@student.put.poznan.pl</string>
+    <string name="option1">Github autora</string>
+    <string name="option2">Przygotowanie do wyprawy</string>
+    <string name="option3">Jak uniknąć kontuzji</string>
+
+    <string name="open_drawer">Otwórz szufladę nawigacyjną</string>
+    <string name="close_drawer">Zamknij szufladę nawigacyjną</string>
+    <string name="save">Zapisz</string>
+    <string name="saved_times">Zapisane czasy</string>
+    <string name="trail_search">Wyszukaj szlak</string>
+    <string name="speed_edit_hint">km\\h</string>
+    <string name="stages">Etapy:</string>
+    <string name="take_picture">Zrób zdjęcie</string>
+    <string name="image">Zdjęcie</string>
+</resources>

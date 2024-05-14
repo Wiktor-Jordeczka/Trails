@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:textAlignment="viewEnd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    tools:context=".TrailDetailFragment"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/trailName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingHorizontal="10dp"
+        android:textSize="32sp"
+        app:layout_constraintTop_toTopOf="@+id/trailDescription" />
+
+    <TextView
+        android:id="@+id/trailDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="10dp"
+        android:justificationMode="inter_word"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="10dp"
+        android:justificationMode="inter_word"
+        android:text="@string/stages"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="115dp"
+        android:layout_marginTop="5dp">
+        <ListView
+            android:id="@+id/stagesListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="2dp"
+            android:divider="?attr/colorAccent"
+            android:listSelector="@android:color/transparent"
+            app:layout_constraintTop_toBottomOf="@+id/trailName">
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/trailDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="10dp"
+        android:justificationMode="inter_word"
+        android:textSize="16sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/speedEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/speed_edit_hint"
+            android:textSize="16sp"
+            android:textAlignment="viewEnd"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no"
+            app:layout_constraintBottom_toBottomOf="@+id/speedtext"
+            app:layout_constraintEnd_toStartOf="@+id/speedtext"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/speedtext" />
+
+        <TextView
+            android:id="@+id/speedtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/speedEdit"
+            tools:layout_editor_absoluteY="9dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/stoper_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

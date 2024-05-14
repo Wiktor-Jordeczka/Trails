@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edu.put.inf151785.CustomImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fullscreen_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:scaleType="matrix"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:src="@mipmap/ic_launcher"
+    android:background="?attr/background"/>
