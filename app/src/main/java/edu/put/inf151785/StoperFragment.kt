@@ -37,6 +37,7 @@ class StoperFragment : Fragment(), View.OnClickListener {
             running = savedInstanceState.getBoolean("running");
             wasRunning = savedInstanceState.getBoolean("wasRunning");
             trailID = savedInstanceState.getInt("trailID")
+            stopTime = savedInstanceState.getLong("stopTime")
         }
     }
 
@@ -91,6 +92,7 @@ class StoperFragment : Fragment(), View.OnClickListener {
         outState.putBoolean("running", running);
         outState.putBoolean("wasRunning", wasRunning);
         trailID?.let { outState.putInt("trailID", it) }
+        outState.putLong("stopTime", stopTime)
     }
 
     private fun onClickStart() {
